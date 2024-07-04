@@ -1,12 +1,12 @@
 body,
 html {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* 字體 */
   text-align: center;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* min-height: 100vh; 是一個 CSS 屬性，用於設置元素的最小高度為視窗高度的 100%。這意味著無論視窗的大小如何，該元素的高度至少會與視窗的高度相同。這在確保背景影片或其他元素能夠覆蓋整個視窗高度時非常有用。 */
-  overflow: hidden; /* 隐藏溢出内容 */
+  /*overflow: hidden; /* 隐藏溢出内容 */
 }
 .con {
   z-index: 1;
@@ -68,7 +68,7 @@ padding-top: 5%;
   transition: opacity 1s ease-in-out; /* 添加漸變效果*/
 }
 
-iframe {
+.iframe {
   width: 100vw;
   height: 56.25vw;
   /* 16:9 aspect ratio*/
@@ -148,6 +148,12 @@ iframe {
   display: inline-block;
   padding: 10px 20px;
 }
+.header p {
+  font-family: "標楷體", sans-serif;
+  font-size: 20px; /* 字體大小 */
+  font-weight: bold;
+  color: #000000;
+}
 
 /* 會員控制區塊 */
 
@@ -204,8 +210,8 @@ iframe {
   width: 300px;
   margin: 10px; /* 卡片的外邊距 */
   padding: 20px;
-  text-align: center;
-  position: relative;
+  text-align: center; /* 文字居中 */
+  position: relative; /* 使卡片固定在中间 */
 }
 
 .card:hover {
@@ -240,7 +246,7 @@ iframe {
   color: #ffffff;
   margin-top: 10px;
   line-height: 1.6;
-  font-weight: bold;
+  font-weight: bold; /* 粗體 */
   /* opacity: 0.5; */
   opacity: 0;
 }
@@ -304,7 +310,7 @@ iframe {
 
 .sidebar a {
   background-color: rgba(51, 31, 223, 0.3); /* 半透明背景 */
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px;
   margin: 5px 0;
   text-align: center; /* 文本居中 */
